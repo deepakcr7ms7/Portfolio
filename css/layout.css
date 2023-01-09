@@ -21,7 +21,7 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin: 225px 250px;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 
 .portfolio-header-image {
