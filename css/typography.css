@@ -8,7 +8,7 @@ body {
 }
 
 .button-text {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -18,17 +18,17 @@ body {
 }
 
 .main-title {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
 }
 
 .subheader-text {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .body-text {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
 }
 
