@@ -24,6 +24,27 @@ a.icon-link:hover {
 }
 
 
+/* Navbar Styling */
+
+.navbar {
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-title-link {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-title-link:hover {
+  text-decoration: underline;
+}
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
