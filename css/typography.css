@@ -1,14 +1,14 @@
 body {
-  font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+  font-family: "Georgia", Verdana;  )
 }
 
 .nav-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .button-text {
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .body-text {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
 }
 

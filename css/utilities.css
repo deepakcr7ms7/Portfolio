@@ -2,8 +2,8 @@
 /* Icons */
 
 .right-arrow-icon {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   margin-top: 1px;
 }
 
@@ -57,6 +57,7 @@ a.icon-link:hover {
 
 /* Button Styling */
 
+
 a.button {
   padding: 8px 16px;
   border: 3px solid #141414;
@@ -65,13 +66,13 @@ a.button {
   text-decoration: none;
   width: fit-content;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
 }
 
 a.button:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   cursor: pointer;
 }
 
