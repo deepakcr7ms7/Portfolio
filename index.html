@@ -1,280 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Phadtare | Full-Stack Engineer</title>
 
-    <!-- 
-      TODO
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
 
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Deepak's Portfolio</title>
-    <meta name="description" content="A.">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
-
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body  style="background-color:whitesmoke ;color:#17202A;" >
-    <!-- NAVBAR -->
-
-
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-      <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title"></span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-
-      </a>
-    </div>
-
-
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
-
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-         <img src="./assets/images/portfolio.jpg" class="portfolio-header-image">
-           <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-           </a>
-
-        </div>
-
-          <!-- 
-            TODO
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-          </a>
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm Deepak Phadtare</span>
-
-              <div class="body-text">
-                  <br/>I’m a programmer. I love finding ways to use my knowledge of machine learning and programming to solve real-world problems.
-                  I believe that <b>words and data are two most powerful tools to change the world.</b>
-                  <p>Most of my time I spent staring at my computer screen
-              During the day, I am usually programming, working to derive insight from large datasets.
-                      My skills include <b> Web developement, data analysis,  and machine learning</b>.</p> <p>I have developed strong acumen for problem solving, and I enjoy an occasional challenge. 
-              </div>
-
-                <div id="links">
-
-            <a class="button" href="https://www.linkedin.com/in/deepakphadtare">
-               <span class="button-text" >linkedIn</span>
-                    <image src="./assets/icons/iconmonstr-linkedin-3.svg" class="right-arrow-icon"/>
-               </a>
-            <a class="button" href="https://github.com/deepakcr7ms7/DeepakPortfolio">
-               <span class="button-text" >GitHub</span>
-                    <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-               </a>
-             <a class="button" href="mailto:whitevans.eth@gmail.com">
-                <span class="button-text">Contact </span>
-                 <image src="./assets/icons/mail.svg" class="right-arrow-icon"/>
-
-             </a>
-
-</div>
-
-                  </div>
-            <!--
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-            -->
-
-        </div>
-      </div>
-
-      <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
-
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
-       <!--
-      <div id="about-section">
-        <span class="subheader-text">About Me</span>
-        <div class="about-section-content">
-          <div class="body-text">
-              <p>I'm an aspiring data scientist or machine learning engineer. I earned a bachelor's degree in electronics engineering from Walchand College of Engineering and a master's degree in Electrical engineering with specialization in machine learning from Stony Brook University.</p>
-
-<p>I started my career as a data analyst in the financial world, but soon realized that I wanted to do more with my data than just crunch numbers. I wanted to make something that mattered - something that would help people or organizations make better decisions.
-
-Since then, I've worked on various projects, including developing an app that helps doctors diagnose patients based on their medical records. This project was particularly challenging because instead of relying solely on traditional machine learning techniques like classification or regression, I had to use deep neural networks (DNNs). It took efforts but I managed to achieve 90% accuracy in predicting disease classification models. I was able to cut down the time required to complete this task from 8 minutes per patient down to 18 seconds!.
-</p>
-              <p>I'm interested in full-time  data science or machine learning roles.</p>
-          </div>
-        </div>
-      </div>
-    -->
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text"> My Projects </span>
-
-        <div class="projects-container">
-          <!-- 
-            TODO
-
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
-        <div class="project-card">
-              <img src="./assets/images/grocery-roundup-instacart-loyalty.jpg" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">Instacart Market Basket Analysis</div>
-                <div class="body-text project-card-text"> The objective of this project is to analyze the 3 million grocery orders from more than 200,000 Instacart users and predict which previously purchased item will be in user's next order. Customer segmentation and affinity analysis are also done to study user purchase patterns.
+    <!-- HERO -->
+    <header>
+        <div class="container hero">
+            <div>
+                <h1>Deepak Phadtare</h1>
+                <p>
+                    <strong>Full-Stack Engineer <!--(SDE II)--></strong> building production-grade systems end-to-end.
+                    Strong backend foundations with a sharp eye for frontend UX and data-driven decision making.
+                </p>
+                <div class="hero-actions">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="mailto:phadtaredeepak001@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
-              </div>
-              <a class="button" href="https://github.com/deepakcr7ms7/Instacart_Market_Analysis" >
-                <span class="button-text"> GitHub </span>
-                <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-              </a>
             </div>
+            <img src="assets/images/portfolio.jpg" alt="Deepak" class="avatar" />
+        </div>
+    </header>
 
-          <div class="project-card">
-            <img src="./assets/images/images%20(2).jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Health Care App</div>
-              <div class="body-text project-card-text">Created seven disease classification models with TensorFlow, Random Forest and XGBoost to analyse patients’ medical records, achieving over 90% accuracy. Integrated trained models to create an application with Flask framework.
-              </div>
-            </div>
-            <a class="button" href="https://github.com/deepakcr7ms7/Health_Care_App">
-              <span class="button-text">GitHub</span>
-              <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-
-          <div class="project-card">
-            <img src="./assets/images/search-engine-machine-learning-60f984e149e45-sej.jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Book Search Engine</div>
-              <div class="body-text project-card-text">Developed an innovative Book search engine using collaborative filtering, which provides users a personalized search experience for any type of book hunting intent query.</div>
-            </div>
-            <a class="button" href="https://github.com/deepakcr7ms7/Book_search_engine">
-              <span class="button-text">GitHub</span>
-              <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-            <div class="project-card">
-              <img src="./assets/images/spotify.png" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">Spotify Song Recommender</div>
-                <div class="body-text project-card-text">In this project, I built a content-based filtering recommendation system using Spotify playlists data from scratch. This involves the procedure of feature preprocessing, feature generation, recommendation modeling and application developement in Flask.</div>
-              </div>
-              <a class="button" href="https://github.com/deepakcr7ms7/Spotify_Song_Reccomender">
-                <span class="button-text"> GitHub </span>
-                <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-            <div class="project-card">
-              <img src="./assets/images/ML2.jpg" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">Machine Learning Algorithms</div>
-                <div class="body-text project-card-text">Implemented algorithms like Star cubing, Bayesian Classifier, FP growth, Decision Tree Induction, Logistic Regression, KNN from scratch without using any inbuilt library (like Scikit-Learn) with average accuracy of 90%.
-
-</div>
-              </div>
-              <a class="button" href="https://github.com/deepakcr7ms7/Machine-Learning">
-                <span class="button-text"> GitHub </span>
-                <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-            <div class="project-card">
-              <img src="./assets/images/download.jpg" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">Hardware Generation Tool</div>
-                <div class="body-text project-card-text">Built a tool that flexibly generates hardware to accelerate the evaluation of multiple layers of convolution system with a non-linear function called a ReLU after each convolution. Designed it using digital system design techniques
-
+    <!-- IMPACT -->
+    <section>
+        <div class="container">
+            <h2>Impact at a Glance</h2>
+            <div class="metrics">
+                <div class="card">
+                    <div class="metric-value">$1.5M</div>
+                    <p>Saved by replacing manual quoting & billing workflows with a unified automation platform</p>
                 </div>
-              </div>
-              <a class="button" href="https://github.com/deepakcr7ms7/Harware_Generation_Tool">
-                <span class="button-text"> GitHub </span>
-                <image src="./assets/icons/iconmonstr-github-3.svg" class="right-arrow-icon"/>
-              </a>
+                <div class="card">
+                    <div class="metric-value">$100K</div>
+                    <p>Inventory reduction in Q1 through data-driven analysis and optimization</p>
+                </div>
+                <div class="card">
+                    <div class="metric-value">$300K+</div>
+                    <p>Annualized savings from ML-informed demand forecasting in production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <div class="container">
+            <h2>What I Build</h2>
+            <div class="skills">
+                <div class="card">
+                    <i class="fas fa-diagram-project"></i>
+                    <h3>Enterprise Systems</h3>
+                    <p>Workflow engines, pricing logic, audit trails, role-based control</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Engineering</h3>
+                    <p>ASP.NET MVC, C#, SQL Server, APIs, performance tuning</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data-Driven UX</h3>
+                    <p>Dashboards, analytics-backed UI decisions, modern frontend design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLAGSHIP -->
+    <section>
+        <div class="container">
+            <div class="flagship-header">
+                <h2>Flagship Systems</h2>
+                <div class="toggle">
+                    <button class="active" onclick="showProject('quote', this)">Quoting & Billing</button>
+                    <button onclick="showProject('inventory', this)">ML & Inventory</button>
+                </div>
             </div>
 
+            <!-- QUOTING -->
+            <div id="quote">
+                <div class="compare-grid">
+                    <div class="card compare-card">
+                        <h3>Before</h3>
+                        <ul>
+                            <li>Manual Excel-based pricing</li>
+                            <li>Tribal knowledge dependency</li>
+                            <li>No audit trail</li>
+                            <li>Inconsistent proposals</li>
+                        </ul>
+                    </div>
+                    <div class="card compare-card">
+                        <h3>After</h3>
+                        <ul>
+                            <li>Workflow-driven platform</li>
+                            <li>Centralized pricing engine</li>
+                            <li>Full traceability</li>
+                            <li>Standardized proposals</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <h3>Key Design Decisions</h3>
+                <div class="decision-grid">
+                    <div class="card"><strong>Workflow Enforcement</strong><p>Prevented invalid state transitions after approvals</p></div>
+                    <div class="card"><strong>Unified Pricing Model</strong><p>Single authoritative pricing source</p></div>
+                    <div class="card"><strong>On-Demand Costing</strong><p>Always uses latest effective rates</p></div>
+                    <div class="card"><strong>System-Driven Logic</strong><p>Correctness enforced by design</p></div>
+                </div>
+
+                <details class="card">
+                    <summary>View System Architecture</summary>
+                    <img src="assets/images/pricing-architecture.png" alt="System Architecture" />
+                </details>
+            </div>
+
+            <!-- INVENTORY -->
+            <div id="inventory" style="display:none">
+
+                <div class="compare-grid">
+                    <div class="card compare-card">
+                        <h3>Before</h3>
+                        <ul>
+                            <li>Reactive ordering (order when run out)</li>
+                            <li>No demand prioritization</li>
+                            <li>Overstock & stockouts during peaks</li>
+                            <li>Decisions driven by intuition</li>
+                        </ul>
+                    </div>
+                    <div class="card compare-card">
+                        <h3>After</h3>
+                        <ul>
+                            <li>Proactive, data-driven ordering</li>
+                            <li>Priority-based replenishment</li>
+                            <li>Optimized safety stock</li>
+                            <li>Decisions backed by data</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Key Design Decisions</h3>
+                <div class="decision-grid">
+                    <div class="card"><strong>Priority-Based Ordering</strong><p>Items ranked by demand variability, cost, and business criticality</p></div>
+                    <div class="card"><strong>Statistical Forecasting</strong><p>Used mean, variance, and trend analysis instead of opaque models</p></div>
+                    <div class="card"><strong>Explainable Logic</strong><p>Simple, interpretable rules ensured stakeholder trust and adoption</p></div>
+                    <div class="card"><strong>Production Integration</strong><p>Recommendations embedded directly into ordering workflows</p></div>
+                </div>
+
+                <details class="card">
+                    <summary>View Decision Flow</summary>
+                    <img src="assets/images/inventory-logic.png" alt="Inventory Decision Flow" />
+                </details>
+            </div>
         </div>
-      </div>
-        <div >
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <br/>
-            <span class="subheader-text"> Certifications </span>
+    </section>
 
-        <div >
-            <br/>
+    <footer>
+        Designed & built by Deepak · Full-Stack · Systems · Data-Driven
+    </footer>
 
-            <a class="button" href="https://www.udemy.com/certificate/UC-PNQ8QZUN/">
-                <span class="button-text">Python</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+    <script>
+        function showProject(id, btn) {
+            document.getElementById('quote').style.display = id === 'quote' ? 'block' : 'none';
+            document.getElementById('inventory').style.display = id === 'inventory' ? 'block' : 'none';
+            document.querySelectorAll('.toggle button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
 
-              </a>
-
-              <br/>
-
-               <a class="button" href="https://www.coursera.org/account/accomplishments/certificate/957FDRH3X4UB">
-                <span class="button-text">SQL for Data Science</span>
-                 <image src="./assets/icons/iconmonstr-database-1.svg" class="right-arrow-icon"/>
-              </a>
-            </a>
-
-            <br/>
-            <a class="button" href="https://coursera.org/verify/A3BDFPNPAZ4W">
-                <span class="button-text">Advanced Learning Algorithms</span>
-                   <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-
-            <br/>
-
-            <a class="button" href="https://www.coursera.org/account/accomplishments/certificate/LPJL7FNDDGZA">
-                <span class="button-text">Supervised Machine Learning: Regression and Classification </span>
-                 <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
-</div>
-    </div >
-
-
-	</body>
+</body>
 </html>

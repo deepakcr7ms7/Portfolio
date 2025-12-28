@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deepak Phadtare · Portfolio</title>
+    <meta name="description" content="SDE II · Full-Stack · Machine Learning" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+
+</head>
+<body data-role="sde">
+
+   
+
+    <header>
+        <div class="container hero">
+            <div>
+                <h1>Deepak Phadtare</h1>
+                <p class="role-sde">
+                    Full-Stack Engineer (SDE II) focused on building high-impact, production-grade systems that
+                    automate workflows, improve performance, and drive measurable business value.
+                </p>
+                <p class="role-ml">
+                    Machine Learning Engineer with strong foundations in supervised, unsupervised, and deep learning,
+                    focused on translating ML research into reliable, real-world systems.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn primary" href="https://www.linkedin.com/in/deepakphadtare"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a class="btn" href="https://github.com/deepakcr7ms7"><i class="fab fa-github"></i>GitHub</a>
+                    <a class="btn" href="mailto:whitevans.eth@gmail.com"><i class="fas fa-envelope"></i>Contact</a>
+                    <button class="btn" onclick="toggleTheme()"><i class="fas fa-moon"></i> Theme </button>
+                </div>
+                <div class="controls">
+                    <button class="btn" onclick="setRole('sde')">SDE / Full-Stack</button>
+                    <button class="btn" onclick="setRole('ml')">ML / Data</button>
+                </div>
+            </div>
+            <img src="./assets/images/portfolio.jpg" class="avatar" />
+        </div>
+    </header>
+
+    <section class="role-sde">
+        <div class="container">
+            <h2 class="section-title">Impact at Scale</h2>
+            <div class="metrics">
+                <div class="metric"><h3>$1.5M</h3><p>Saved by replacing manual quoting & billing workflows with a full-scale automation platform</p></div>
+                <div class="metric"><h3>$300K+</h3><p>Annual savings via ML-driven demand forecasting in production</p></div>
+                <div class="metric"><h3>$100K</h3><p>Inventory optimization savings in Q1 through data-driven analysis</p></div>
+                <div class="metric"><h3>12+ mo</h3><p>End-to-end ownership of a critical internal product at Broadridge</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Core Skill Set</h2>
+            <div class="skills">
+                <div class="skill"><i class="fas fa-code"></i>C# / .NET</div>
+                <div class="skill"><i class="fab fa-python"></i>Python</div>
+                <div class="skill"><i class="fas fa-database"></i>SQL</div>
+                <div class="skill"><i class="fab fa-js"></i>JavaScript</div>
+                <div class="skill"><i class="fas fa-cubes"></i>System Design</div>
+                <div class="skill"><i class="fas fa-cloud"></i>AWS</div>
+                <div class="skill role-ml"><i class="fas fa-brain"></i>Machine Learning</div>
+                <div class="skill role-ml"><i class="fas fa-robot"></i>Deep Learning</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================
+      FLAGSHIP DEEP DIVE (VISUAL)
+    ===================== -->
+    <section id="deep-dive" class="section">
+        <h2 class="section-title">Flagship Project · Quoting & Billing Automation</h2>
+        <p class="section-subtitle">Internal platform · Broadridge · Full Ownership</p>
+
+        <!-- IMPACT METRICS -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-value">$1.5M+</span>
+                <span class="metric-label">Annual Cost Savings</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">12+ mo</span>
+                <span class="metric-label">Sole Ownership</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">0</span>
+                <span class="metric-label">Excel Dependencies</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">Workflow Standardized</span>
+            </div>
+        </div>
+
+        <!-- BEFORE / AFTER -->
+        <div class="compare-grid">
+            <div class="compare-card before">
+                <h3>Before</h3>
+                <ul>
+                    <li>Manual Excel-based pricing</li>
+                    <li>Tribal knowledge dependency</li>
+                    <li>No audit trail or history</li>
+                    <li>Inconsistent proposals</li>
+                    <li>No leadership visibility</li>
+                </ul>
+            </div>
+            <div class="compare-card after">
+                <h3>After</h3>
+                <ul>
+                    <li>Workflow-driven platform</li>
+                    <li>Centralized pricing engine</li>
+                    <li>Full history & traceability</li>
+                    <li>Uniform PDF proposals</li>
+                    <li>Reporting-ready architecture</li>
+                </ul>
+            </div>
+        </div>
+        <!-- System Architecture Section -->
+        <section class="architecture-section">
+            <h2>System Architecture Overview</h2>
+            <p class="subtitle">
+                A rules-driven pricing platform designed to eliminate manual cost calculation,
+                ensure consistency across sites, and provide full auditability.
+            </p>
+
+
+            <div class="architecture-card">
+                <img src="/assets/images/SysArc.png"
+                     alt="Pricing system architecture diagram"
+                     class="architecture-image" />
+            </div>
+
+
+            <ul class="architecture-highlights">
+                <li>Step-based workflow engine enforces consistency and prevents invalid state changes</li>
+                <li>Pricing computed on demand using latest effective rates (no stale data persisted)</li>
+                <li>End-to-end audit trail for compliance, reviews, and historical analysis</li>
+            </ul>
+        </section>
+
+        <!-- DESIGN DECISIONS -->
+        <h3 class="subsection-title">Key Design Decisions</h3>
+        <div class="decision-grid">
+            <div class="decision-card">
+                <h4>Workflow Enforcement</h4>
+                <p>Step-based statuses prevent unauthorized or accidental changes after approvals.</p>
+            </div>
+            <div class="decision-card">
+                <h4>Unified Pricing Model</h4>
+                <p>Replaced fragmented Excel formulas with a single authoritative rate table.</p>
+            </div>
+            <div class="decision-card">
+                <h4>Dynamic Cost Calculation</h4>
+                <p>Final cost calculated on-demand using latest effective rates.</p>
+            </div>
+            <div class="decision-card">
+                <h4>System-Driven Logic</h4>
+                <p>User inputs guide pricing, system enforces correctness.</p>
+            </div>
+        </div>
+
+        <!-- TRADE-OFFS -->
+        <details class="tradeoffs">
+            <summary>Design Trade-offs & Learnings</summary>
+            <ul>
+                <li>Reduced flexibility to enforce consistency</li>
+                <li>Historical open jobs may reflect updated pricing</li>
+                <li>Some granular cost breakdowns removed for clarity</li>
+                <li>Strong backend validation required due to reduced user control</li>
+            </ul>
+        </details>
+    </section>
+
+
+
+
+    <section class="role-ml">
+        <div class="container">
+            <h2 class="section-title">ML Foundation & Range</h2>
+            <div class="card">
+                <h3>Machine Learning Specialization · Stanford (Coursera)</h3>
+                <p>Comprehensive ML training covering theory, implementation, and real-world tradeoffs.</p>
+                <p><strong>Coverage:</strong> Supervised & Unsupervised Learning, Neural Networks, Recommenders, Reinforcement Learning, Model Evaluation, Data Ethics</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="./assets/images/grocery-roundup-instacart-loyalty.jpg" />
+                    <h3>Instacart Market Basket Analysis</h3>
+                    <p>Large-scale customer behavior analysis on 3M+ orders using ML & statistics.</p>
+                    <a class="btn" href="https://github.com/deepakcr7ms7/Instacart_Market_Analysis">GitHub</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/spotify.png" />
+                    <h3>Spotify Song Recommender</h3>
+                    <p>Content-based recommendation engine with feature engineering and Flask deployment.</p>
+                    <a class="btn" href="https://github.com/deepakcr7ms7/Spotify_Song_Reccomender">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">© 2025 Deepak Phadtare · Designed to adapt to the role you’re hiring for</div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.dataset.theme = document.body.dataset.theme === 'dark' ? '' : 'dark';
+        }
+        function setRole(role) {
+            document.body.dataset.role = role;
+        }
+    </script>
+
+</body>
+</html>
+
