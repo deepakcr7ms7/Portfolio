@@ -3,7 +3,7 @@
     --bg-soft: #0f172a;
     --card: #020617;
     --text: #e5e7eb;
-    --muted: #9ca3af;
+    --muted: #d9e3f4;
     --accent: #38bdf8;
     --accent-soft: rgba(56,189,248,0.12);
     --border: rgba(255,255,255,0.08);
@@ -26,6 +26,8 @@ body {
     /*background-size: cover ;
     background-repeat: no-repeat;*/ /* Optional: prevents the image from repeating */
     /*background-position: center;*/
+    outline: 5px solid red;
+
 }
 
 
@@ -97,16 +99,21 @@ header {
     margin: 0 auto;
     padding: 0 24px;
     position: relative;
+    background: url("../assets/images/up2.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat; 
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.55);
 }
 
 
 
 /* Base Card */
 .hero-card {
-    background: var(--card);
-    border: 1px solid var(--border);
     border-radius: 18px;
     box-shadow: 0 40px 80px rgba(0,0,0,0.55);
+    border: 1px solid var(--border);
 }
 
 /* =========================
@@ -116,16 +123,16 @@ header {
 .hero-image-card {
     width: 420px;
     flex: 0 0 420px; /* 👈 THIS IS THE KEY */
-    padding: 16px;
     z-index: 3;
-    transform: translateX(40px);
+    transform: translate(20px, 40px);
 }
 
 
 
     .hero-image-card img {
-        height: 520px; /* was 460 */
+        height: 500px; /* was 460 */
         object-fit: cover;
+        border-radius: 18px;
     }
 
 
@@ -136,8 +143,9 @@ header {
 .hero-content-card {
     flex: 1;
     padding: 56px 64px;
-    margin-left: -120px;
+    margin: 40px 50px 60px;
     z-index: 1;
+
 }
 
 
@@ -148,6 +156,8 @@ header {
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-bottom: 6px;
+    border-top: solid;
+    padding-top: 20px;
 }
 
 /* Role */
