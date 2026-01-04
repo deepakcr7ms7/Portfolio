@@ -17,21 +17,25 @@
         <div class="hero-cards">
 
             <div class="hero-card hero-image-card">
-                <img src="assets/images/Portfolio_gpt.png" alt="Deepak Phadtare">
+                <div class="hero-anim hero-anim--img">
+                    <img src="assets/images/Portfolio_gpt.png" alt="Deepak Phadtare">
+                </div>
             </div>
 
             <div class="hero-card hero-content-card">
-                <h1 class="hero-title">Deepak Phadtare</h1>
-                <span class="hero-role">Full-Stack Engineer</span>
-                <p class="hero-description">
-                    Building production-grade systems end-to-end with strong backend foundations,
-                    clean frontend UX, and data-driven decision making.
-                </p>
+                <div class="hero-anim hero-anim--content">
+                    <h1 class="hero-title">Deepak Phadtare</h1>
+                    <span class="hero-role">Full-Stack Engineer</span>
+                    <p class="hero-description">
+                        Building production-grade systems end-to-end with strong backend foundations,
+                        clean frontend UX, and data-driven decision making.
+                    </p>
 
-                <div class="hero-actions">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="mailto:phadtaredeepak001@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <div class="hero-actions">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="mailto:phadtaredeepak001@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -41,10 +45,17 @@
 
 
 
+
     <!-- IMPACT -->
-    <section>
+    <section class="section-card section-impact">
         <div class="container">
-            <h2>Impact at a Glance</h2>
+            <div class="section-head">
+                <div class="section-icon"><i class="fas fa-bolt"></i></div>
+                <div>
+                    <h2>Impact at a Glance</h2>
+                    <!--<p class="section-subtitle">Business outcomes delivered in production.</p>-->
+                </div>
+            </div>
             <div class="metrics">
                 <div class="card">
                     <div class="metric-value">$1.5M</div>
@@ -63,9 +74,15 @@
     </section>
 
     <!-- SKILLS -->
-    <section>
+    <section class="section-card section-skills">
         <div class="container">
-            <h2>What I Build</h2>
+            <div class="section-head">
+                <div class="section-icon"><i class="fas fa-layer-group"></i></div>
+                <div>
+                    <h2>What I Build</h2>
+                    <!--<p class="section-subtitle">Systems, UX, and data-end to end.</p>-->
+                </div>
+            </div>
             <div class="skills">
                 <div class="card">
                     <i class="fas fa-diagram-project"></i>
@@ -87,10 +104,16 @@
     </section>
 
     <!-- FLAGSHIP -->
-    <section>
-        <div class="container">
-            <div class="flagship-header">
-                <h2>Flagship Systems</h2>
+    <section class="section-card section-flagship reveal">
+        <div class="container reveal">
+
+            <div class="section-head">
+                <div class="section-icon"><i class="fas fa-diagram-project"></i></div>
+                <div style="flex:1">
+                    <h2>Flagship Systems</h2>
+                    <p class="section-subtitle">Two production systems showcasing end-to-end ownership and data-driven decisions.</p>
+                </div>
+
                 <div class="toggle">
                     <button class="active" onclick="showProject('quote', this)">Quoting & Billing</button>
                     <button onclick="showProject('inventory', this)">ML & Inventory</button>
@@ -136,7 +159,6 @@
 
             <!-- INVENTORY -->
             <div id="inventory" style="display:none">
-
                 <div class="compare-grid">
                     <div class="card compare-card">
                         <h3>Before</h3>
@@ -171,20 +193,56 @@
                     <img src="assets/images/inventory-logic.png" alt="Inventory Decision Flow" />
                 </details>
             </div>
+
         </div>
     </section>
 
     <footer>
         Designed & built by Deepak · Full-Stack · Systems · Data-Driven
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
+        const els = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('in');
+            });
+        }, { threshold: 0.12 });
+
+        els.forEach(el => io.observe(el));
         function showProject(id, btn) {
-            document.getElementById('quote').style.display = id === 'quote' ? 'block' : 'none';
-            document.getElementById('inventory').style.display = id === 'inventory' ? 'block' : 'none';
-            document.querySelectorAll('.toggle button').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            const $quote = $('#quote');
+            const $inv = $('#inventory');
+
+            // stop any in-flight animations so it doesn't feel jittery on rapid clicks
+            $quote.stop(true, true);
+            $inv.stop(true, true);
+
+            if (id === 'quote') {
+                $inv.fadeOut(220, function () {
+                    $quote.fadeIn(260);
+                });
+            } else {
+                $quote.fadeOut(220, function () {
+                    $inv.fadeIn(260);
+                });
+            }
+
+            $('.toggle button').removeClass('active');
+            $(btn).addClass('active');
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const hero = document.querySelector('.hero-wrap');
+            if (!hero) return;
+
+            // Ensure initial styles are applied, then animate
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    hero.classList.add('is-ready');
+                });
+            });
+        });
     </script>
 
 </body>
