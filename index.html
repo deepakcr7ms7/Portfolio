@@ -32,9 +32,17 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="mailto:phadtaredeepak001@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/deepakphadtare"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/deepakcr7ms7"
+                           target="_blank"
+                           rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="mailto:phadtaredeepak001@gmail.com"
+                           target="_blank"
+                           rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -103,94 +111,233 @@
         </div>
     </section>
 
-    <!-- FLAGSHIP -->
+    <!-- FLAGSHIP SYSTEMS (REVISED) -->
     <section class="section-card section-flagship reveal">
         <div class="container reveal">
 
+            <!-- Section Header + Permanent Context -->
             <div class="section-head">
+
                 <div class="section-icon"><i class="fas fa-diagram-project"></i></div>
-                <div style="flex:1">
+                <div class="section-head-text">
                     <h2>Flagship Systems</h2>
-                    <p class="section-subtitle">Two production systems showcasing end-to-end ownership and data-driven decisions.</p>
+                    <p class="section-subtitle">
+                        Production systems at Broadridge that I own, operate, and continuously improve.
+                    </p>
+
+
                 </div>
 
-                <div class="toggle">
-                    <button class="active" onclick="showProject('quote', this)">Quoting & Billing</button>
-                    <button onclick="showProject('inventory', this)">ML & Inventory</button>
+
+            </div>
+            <div style="text-align:center; margin:auto">
+                <!-- Guide text -->
+                <p class="section-guide">
+                    Select a system to explore how it works and the impact it delivers
+                </p>
+
+                <!-- System selector -->
+                <div class="toggle" aria-label="Select production system">
+                    <button class="active" onclick="showProject('quote', this)">
+                        Quoting & Billing Platform
+                    </button>
+                    <button onclick="showProject('inventory', this)">
+                        ML-Driven Inventory Management System
+                    </button>
                 </div>
             </div>
 
-            <!-- QUOTING -->
-            <div id="quote">
+            <!-- ===================== -->
+            <!-- PANEL: QUOTING & BILLING -->
+            <!-- ===================== -->
+            <div id="quote" class="flagship-panel">
+
+                <!-- System Context (always first) -->
+                <div class="card flagship-context">
+                    <div class="context-row">
+                       
+                        <div>
+                            <div style="display:inline-flex;gap:14px">
+                                <div class="context-badge"><i class="fas fa-building"></i></div>
+                                <h3 class="context-title">System Context</h3>
+                            </div>
+                          
+                            <p class="muted">
+                                Internal quoting platform used by client support and operations to generate proposals for a high-value product line.
+                                Replaced a decade-old Excel + tribal-knowledge workflow with a workflow-driven, auditable system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="context-meta">
+                        <span class="pill"><i class="fas fa-user-check"></i> Full ownership</span>
+                        <span class="pill"><i class="fas fa-shield"></i> Auditability</span>
+                        <span class="pill"><i class="fas fa-file-pdf"></i> Standardized proposals</span>
+                    </div>
+                </div>
+
+                <!-- Before / After -->
                 <div class="compare-grid">
                     <div class="card compare-card">
                         <h3>Before</h3>
                         <ul>
-                            <li>Manual Excel-based pricing</li>
-                            <li>Tribal knowledge dependency</li>
-                            <li>No audit trail</li>
-                            <li>Inconsistent proposals</li>
+                            <li>Excel-based pricing and manual steps</li>
+                            <li>Inconsistent quotes across teams</li>
+                            <li>No history, reviews, or audit trail</li>
+                            <li>Limited leadership visibility</li>
                         </ul>
                     </div>
+
                     <div class="card compare-card">
                         <h3>After</h3>
                         <ul>
-                            <li>Workflow-driven platform</li>
-                            <li>Centralized pricing engine</li>
-                            <li>Full traceability</li>
-                            <li>Standardized proposals</li>
+                            <li>Workflow-driven platform with guardrails</li>
+                            <li>Single pricing source of truth</li>
+                            <li>Traceability across revisions and approvals</li>
+                            <li>Uniform, client-ready PDF proposals</li>
                         </ul>
                     </div>
                 </div>
 
-                <h3>Key Design Decisions</h3>
+                <!-- Key Design Decisions -->
+                <h3 class="subsection-title">Key Engineering Decisions</h3>
                 <div class="decision-grid">
-                    <div class="card"><strong>Workflow Enforcement</strong><p>Prevented invalid state transitions after approvals</p></div>
-                    <div class="card"><strong>Unified Pricing Model</strong><p>Single authoritative pricing source</p></div>
-                    <div class="card"><strong>On-Demand Costing</strong><p>Always uses latest effective rates</p></div>
-                    <div class="card"><strong>System-Driven Logic</strong><p>Correctness enforced by design</p></div>
+                    <div class="card">
+                        <strong>Workflow enforcement</strong>
+                        <p class="muted">State transitions prevent edits after approvals and eliminate invalid job states.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Unified pricing model</strong>
+                        <p class="muted">Replaced fragmented pricing grids with a normalized rate model.</p>
+                    </div>
+                    <div class="card">
+                        <strong>On-demand costing</strong>
+                        <p class="muted">Costs computed using the latest effective rates—no stale totals persisted.</p>
+                    </div>
+                    <div class="card">
+                        <strong>System-driven correctness</strong>
+                        <p class="muted">Users provide inputs; rules enforce validity, consistency, and compliance.</p>
+                    </div>
                 </div>
 
+                <!-- Product & UX Evolution (Option A) -->
+                <h3 class="subsection-title">Product & UX Evolution</h3>
+                <div class="flagship-grid" style="margin-top:18px">
+                    <div class="card">
+                        <strong>Decision-oriented UI</strong>
+                        <p class="muted">Designed screens around tasks and outcomes—reduced ambiguity for non-technical users.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Dashboards for leaders</strong>
+                        <p class="muted">Built reporting views that highlight trends and exceptions, not raw tables.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Performance + usability</strong>
+                        <p class="muted">Modernized legacy UX patterns and optimized slow paths on high-traffic pages.</p>
+                    </div>
+                </div>
+
+                <!-- Architecture -->
                 <details class="card">
-                    <summary>View System Architecture</summary>
-                    <img src="assets/images/pricing-architecture.png" alt="System Architecture" />
+                    <summary>View system architecture</summary>
+                    <img src="assets/images/pricing-architecture.png" alt="Pricing system architecture" />
                 </details>
             </div>
 
-            <!-- INVENTORY -->
-            <div id="inventory" style="display:none">
+            <!-- ===================== -->
+            <!-- PANEL: ML & INVENTORY -->
+            <!-- ===================== -->
+            <div id="inventory" class="flagship-panel" style="display:none">
+
+                <!-- System Context -->
+                <div class="card flagship-context">
+                    <div class="context-row">
+                        
+                        <div>
+                            <div style="display:inline-flex;gap:14px">
+                                <div class="context-badge"><i class="fas fa-warehouse"></i></div>
+                                <h3 class="context-title">System Context</h3>
+                            </div>
+                              
+                                <p class="muted">
+                                    Internal inventory and ordering platform supporting replenishment and throughput during peak demand.
+                                    Shifted from reactive ordering to a proactive, data-informed decision flow used in production.
+                                </p>
+                            </div>
+                        </div>
+
+                    <div class="context-meta">
+                        <span class="pill"><i class="fas fa-check-circle"></i> In production</span>
+                        <span class="pill"><i class="fas fa-chart-line"></i> Data-driven policy</span>
+                        <span class="pill"><i class="fas fa-bolt"></i> Throughput-focused</span>
+                    </div>
+                </div>
+
+                <!-- Before / After -->
                 <div class="compare-grid">
                     <div class="card compare-card">
                         <h3>Before</h3>
                         <ul>
                             <li>Reactive ordering (order when run out)</li>
-                            <li>No demand prioritization</li>
-                            <li>Overstock & stockouts during peaks</li>
+                            <li>No prioritization across items</li>
+                            <li>Stockouts during peaks; excess otherwise</li>
                             <li>Decisions driven by intuition</li>
                         </ul>
                     </div>
+
                     <div class="card compare-card">
                         <h3>After</h3>
                         <ul>
-                            <li>Proactive, data-driven ordering</li>
+                            <li>Proactive ordering policy with recommendations</li>
                             <li>Priority-based replenishment</li>
-                            <li>Optimized safety stock</li>
-                            <li>Decisions backed by data</li>
+                            <li>Safety stock aligned to variability and cost</li>
+                            <li>Explainable logic for adoption</li>
                         </ul>
                     </div>
                 </div>
 
-                <h3>Key Design Decisions</h3>
+                <!-- Key Design Decisions -->
+                <h3 class="subsection-title">Key Engineering Decisions</h3>
                 <div class="decision-grid">
-                    <div class="card"><strong>Priority-Based Ordering</strong><p>Items ranked by demand variability, cost, and business criticality</p></div>
-                    <div class="card"><strong>Statistical Forecasting</strong><p>Used mean, variance, and trend analysis instead of opaque models</p></div>
-                    <div class="card"><strong>Explainable Logic</strong><p>Simple, interpretable rules ensured stakeholder trust and adoption</p></div>
-                    <div class="card"><strong>Production Integration</strong><p>Recommendations embedded directly into ordering workflows</p></div>
+                    <div class="card">
+                        <strong>Priority-based ordering</strong>
+                        <p class="muted">Ranked items by variability, cost, and operational criticality.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Statistical forecasting</strong>
+                        <p class="muted">Used trend + variance + demand signals (simple, reliable, explainable).</p>
+                    </div>
+                    <div class="card">
+                        <strong>Safety stock policy</strong>
+                        <p class="muted">Calibrated buffers by priority to reduce stockouts without overbuying.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Workflow integration</strong>
+                        <p class="muted">Recommendations embedded directly into ordering—no separate “ML tool”.</p>
+                    </div>
                 </div>
 
+                <!-- Product & UX Evolution (Option A applied here too) -->
+                <h3 class="subsection-title">Product & UX Evolution</h3>
+                <div class="flagship-grid" style="margin-top:18px">
+                    <div class="card">
+                        <strong>Guided ordering UX</strong>
+                        <p class="muted">Turned “guess and order” into a clear recommendation + reasoning flow.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Operational dashboards</strong>
+                        <p class="muted">Surfaced demand spikes, risk items, and exceptions to reduce firefighting.</p>
+                    </div>
+                    <div class="card">
+                        <strong>Faster decision cycles</strong>
+                        <p class="muted">Reduced ambiguity by consolidating signals into one place and one policy.</p>
+                    </div>
+                </div>
+
+                <!-- Decision Flow -->
                 <details class="card">
-                    <summary>View Decision Flow</summary>
-                    <img src="assets/images/inventory-logic.png" alt="Inventory Decision Flow" />
+                    <summary>View decision flow</summary>
+                    <img src="assets/images/inventory-logic.png" alt="Inventory decision flow" />
                 </details>
             </div>
 
@@ -198,7 +345,7 @@
     </section>
 
     <footer>
-        Designed & built by Deepak · Full-Stack · Systems · Data-Driven
+        Designed & built by Deepak
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -210,27 +357,7 @@
         }, { threshold: 0.12 });
 
         els.forEach(el => io.observe(el));
-        function showProject(id, btn) {
-            const $quote = $('#quote');
-            const $inv = $('#inventory');
-
-            // stop any in-flight animations so it doesn't feel jittery on rapid clicks
-            $quote.stop(true, true);
-            $inv.stop(true, true);
-
-            if (id === 'quote') {
-                $inv.fadeOut(220, function () {
-                    $quote.fadeIn(260);
-                });
-            } else {
-                $quote.fadeOut(220, function () {
-                    $inv.fadeIn(260);
-                });
-            }
-
-            $('.toggle button').removeClass('active');
-            $(btn).addClass('active');
-        }
+       
 
         window.addEventListener('DOMContentLoaded', () => {
             const hero = document.querySelector('.hero-wrap');
@@ -243,6 +370,31 @@
                 });
             });
         });
+
+        function showProject(id, btn) {
+            const $quote = $('#quote');
+            const $inv = $('#inventory');
+
+            const $show = (id === 'quote') ? $quote : $inv;
+            const $hide = (id === 'quote') ? $inv : $quote;
+
+            $show.stop(true, true);
+            $hide.stop(true, true);
+
+            $hide.animate({ opacity: 0, top: 10 }, 180, function () {
+                $hide.hide();
+            });
+
+            $show
+                .show()
+                .css({ opacity: 0, position: 'relative', top: 10 })
+                .animate({ opacity: 1, top: 0 }, 320);
+
+            $('.toggle button').removeClass('active');
+            $(btn).addClass('active');
+        }
+
+
     </script>
 
 </body>
