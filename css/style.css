@@ -614,3 +614,150 @@ footer {
     opacity: 0.85;
 }
 
+/* Journey Timeline */
+.section-journey .reveal-btn {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .section-journey .reveal-btn:hover {
+        background-color: #111827;
+    }
+
+.journey-timeline {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+    .journey-timeline.visible {
+        opacity: 1;
+        max-height: 3000px;
+    }
+
+.journey-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 10px;
+    border-left: 3px dashed #d1d5db;
+ 
+}
+
+    .journey-step::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #3b82f6;
+        border-radius: 50%;
+        position: absolute;
+        left: -7px;
+        top: 8px;
+    }
+
+.step-icon {
+    min-width: 30px;
+    padding-top: 4px;
+    color: #3b82f6;
+}
+
+.journey-step h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.journey-step p {
+    margin-bottom: 6px;
+    color: white;
+}
+
+.journey-step blockquote {
+    font-style: italic;
+   /* color: #6b7280;*/
+    border-left: 3px solid #facc15;
+    padding-left: 12px;
+}
+/* Scroll Reveal Animation */
+.journey-step {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+    .journey-step.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+.journey-path {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.section-journey {
+    position: relative;
+}
+
+.final-step {
+   /* background-color: #f9fafb;*/
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 5px solid #3b82f6;
+}
+/* SVG Path Styling */
+.journey-svg-path {
+    position: absolute;
+    left: 32px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.section-journey {
+    position: relative;
+}
+.journey-svg-path {
+    position: absolute;
+    left: 32px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+    .journey-svg-path path {
+        stroke: #9ca3af;
+        stroke-width: 2;
+        fill: none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: drawPath 3s ease-out forwards;
+    }
+
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.section-journey {
+    position: relative;
+}
+
